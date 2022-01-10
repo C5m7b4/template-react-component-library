@@ -2,11 +2,12 @@ import React from 'react';
 import { AnimationTypes, Theme, ToastPosition } from '../../types';
 
 export interface ToastContainerProps {
-  position: ToastPosition;
+  position?: ToastPosition;
 }
 
 const ToastContainer: React.FC<ToastContainerProps> = (props) => {
   const { position } = props;
+  console.log('position', position);
   return (
     <div>
       <h2>Toast Container</h2>
