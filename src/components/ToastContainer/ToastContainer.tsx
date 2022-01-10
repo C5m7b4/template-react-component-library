@@ -1,9 +1,5 @@
 import React from 'react';
-import { AnimationTypes, Theme, ToastPosition } from '../../types';
-
-export interface ToastContainerProps {
-  position?: ToastPosition;
-}
+import { ToastContainerProps } from '../../interfaces';
 
 const ToastContainer: React.FC<ToastContainerProps> = (props) => {
   const { position } = props;
