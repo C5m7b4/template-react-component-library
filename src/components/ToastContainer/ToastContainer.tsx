@@ -12,6 +12,14 @@ export interface ToastContainerProps {
 }
 
 const ToastContainer: React.FC<ToastContainerProps> = (props) => {
+  const {
+    position,
+    autoClose,
+    autoCloseDelay,
+    showIcons,
+    theme,
+    showLastOnTop,
+  } = props;
   return (
     <div>
       <h2>Toast Container</h2>
