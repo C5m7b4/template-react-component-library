@@ -19,4 +19,13 @@ const ToastContainer: React.FC<ToastContainerProps> = (props) => {
   );
 };
 
+ToastContainer.defaultProps = {
+  position: 'top-right',
+  autoClose: true,
+  autoCloseDelay: 10000,
+  showIcons: false,
+  theme: 'dark',
+  showLastOnTop: false,
+};
+
 export default ToastContainer;
