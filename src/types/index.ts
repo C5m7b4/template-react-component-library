@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * These are the types for the Toast Container
+ */
 export type TypeOptions =
   | 'info'
   | 'success'
@@ -46,4 +49,15 @@ interface CommonOptions {
 
 export interface ToastOptions extends CommonOptions {
   animation?: AnimationTypes;
+}
+
+export type OnShowCallback = {
+  content: ToastContent;
+  id: string;
+  type: TypeOptions;
+};
+
+export const enum Event {
+  Show,
+  Clear,
 }
